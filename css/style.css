@@ -78,22 +78,7 @@ a{
     background-size:cover;
     background-position: center;
 }
-/* .home_login{
-    position: relative;
-    height: 100vh;
-    width: 100%;
-    background-image:url("3.png");
-    background-size:cover;
-    background-position: center;
-}
-.home_register{
-    position: relative;
-    height: 100vh;
-    width: 100%;
-    background-image:url("2.png");
-    background-size:cover;
-    background-position: center;
-} */
+
 .login_container{
     display: none;
     position:absolute;    

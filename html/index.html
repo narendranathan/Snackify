@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snackify</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="#" class="nav_logo"><I>SNACKIFY</I></a>
+
+            <!-- <ul class="nav_items">
+                <li class="nav_item">
+                    <a href="#" class="nav_link">home</a>
+                    <a href="#" class="nav_link">categories</a>
+                    <a href="#" class="nav_link">cart</a>                    
+                </li>
+            </ul> -->
+            <div class="login">
+                <button class="button" onclick="showForm('registration')">Register</button>
+                <button class="button" onclick="showForm('login')">Login</button>
+            </div>                          
+        </nav>                
+    </header>
+    <main class="home">
+        <section id="intro" class="welcome_phrase">
+            <p><b>Welcome to,</b></p>
+            <h1><I> SNACKIFY</I></h1>
+            <p>"A Flavor Ride to Your Door."</p>
+            <div class="register-link">
+                Don't have an account? <a href="#" onclick="showForm('registration')">Register</a>
+                <br></br>
+                Already have an account? <a href="#" onclick="showForm('login')">login</a>
+            </div>
+        </section>
+        <section>
+            <div id="registrationFormSection" class="registration_container">
+                <h2>Register</h2>
+                <form id="registrationForm" onsubmit="registerUser(event)">
+                    <label for="username">Username</label>
+                    <input type="text" class="text_box" id="username" placeholder="Username" required />
+                    
+                    <label for="email">email</label>
+                    <input type="email" class="text_box" id="email" placeholder="Email" required />
+                    
+                    <label for="password">Password</label>
+                    <input type="password" class="text_box" id="password" placeholder="Password" required />
+                    
+                    <label for="phone number">Phone Number</label>
+                    <input type="tel" class="text_box" id="phone" placeholder="Phone Number" required />
+                    
+                    <button class="submit_btn" type="submit">Register</button>
+                </form>
+                <div class="login-link">
+                    Already have an account? <a href="#" onclick="showForm('login')">login</a>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div id="loginFormSection" class="login_container">
+                <h2>Login</h2>
+                <form id="loginForm" onsubmit="loginUser(event)">
+                    
+                    <label for="email">email</label>
+                    <input type="email" class="text_box" id="loginEmail" placeholder="Email" required />
+                    
+                    <label for="password">Password</label>
+                    <input type="password" class="text_box" id="loginPassword" placeholder="Password" required />
+                    
+                    <button class="submit_btn" type="submit">Login</button>
+                </form>
+                <div class="register-link">
+                        Don't have an account? <a href="#" onclick="showForm('registration')">Register</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="/js/validation.js"></script>    
+</body>
+</html>

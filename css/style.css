@@ -1,0 +1,225 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", "sans-serif";
+}
+a{
+    text-decoration: none;
+}
+.nav_link:active{
+    transform: scale(0.9);
+}
+.header{
+    position: fixed;
+    height: 80px;
+    width: 100%;
+    background-color: rgb(255, 100, 0);
+    z-index: 100;
+    padding: 0 15px; 
+    font-size: 22px;   
+}
+.nav{
+    max-width: 90%;
+    width: 100%;
+    margin: 0 20px;
+    display: flex;
+    height: 100%;    
+    align-items: center;
+    justify-content: space-between;
+}
+.nav_item{
+    max-width: 70%;
+    width: 100%;
+    display: flex;
+    height: 100%;    
+    align-items: center;
+    justify-content: space-between;
+}
+.nav_logo{
+    font-size: 50px;
+}
+.nav_item{
+    column-gap:70px;
+}
+.nav_link,
+.nav_logo,
+.button{
+    color: black;
+}
+.button{
+    margin-left: 40px;
+    font-size: 22px;
+    padding: 6px 24px;
+    border: 3px solid black;
+    background: transparent;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.button:hover{
+    color: #d9d9d9;
+    border: 3px solid #d9d9d9;
+    background: transparent;
+    border-radius: 10px;
+}
+.button:active{
+    transform: scale(0.9);
+}
+.nav_link:hover{
+    color: #d9d9d9;
+}
+.home{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-image:url("/img/2.png");
+    background-size:cover;
+    background-position: center;
+}
+/* .home_login{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-image:url("3.png");
+    background-size:cover;
+    background-position: center;
+}
+.home_register{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-image:url("2.png");
+    background-size:cover;
+    background-position: center;
+} */
+.login_container{
+    display: none;
+    position:absolute;    
+    top:50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    /* background-color: rgba(255, 106, 0);    */
+    z-index: 101;
+    color: #d9d9d9;
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 5px solid rgb(255, 102, 0);
+    padding: 30px 40px;
+    border-radius: 30px;    
+    width: 400px;
+    height: 600px;
+}
+.registration_container{
+    display: none;
+    position:absolute;    
+    top:50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    /* background-color: rgba(255, 106, 0);    */
+    z-index: 101;
+    color: #d9d9d9;
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 5px solid rgb(255, 102, 0);
+    padding: 30px 40px;
+    border-radius: 30px;    
+    width: 400px;
+    height: 800px;
+}
+.welcome_phrase{
+    display: block;
+    position:absolute;    
+    top:60%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    /* background-color: rgba(255, 106, 0);    */
+    z-index: 101;
+    color: #d9d9d9;
+    width: 600px;
+    height: 700px;
+}
+
+h2{
+    text-align: center;
+    font-size: 30px;
+    padding: 30px;
+}
+/* h1{
+    text-align: center;
+    font-size: 50px;
+    padding: 30px;
+} */
+P{
+    text-align: center;
+    font-size: 30px;
+    padding: 30px;
+}
+label {
+    display: block;
+    font-size: 22px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.text_box{
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    margin-bottom: 30px;
+    border-radius: 15px;
+    border: 1px solid white;
+    color: white;
+    font-size: 18px;
+    background: none;
+}
+.submit_btn {
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    background: rgb(255, 100, 0);
+    color: white;
+    border: none;
+    border-radius: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.submit_btn:hover {
+    background: rgb(255, 110, 0);
+}
+.submit_btn:active {
+    transform: scale(0.9);
+}
+.register-link{
+    width: 100%;
+    padding: 30px;
+}
+.register-link a {
+    color: rgb(255, 110, 0);
+    text-decoration: none;
+}
+/* .register_btn {
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    background: rgb(255, 100, 0);
+    color: white;
+    border: none;
+    border-radius: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.register_btn:hover {
+    background: rgb(255, 110, 0);
+}
+.register_btn:active {
+    transform: scale(0.9); */
+/* } */
+.login-link{
+    width: 100%;
+    padding: 30px;
+}
+.login-link a {
+    color: rgb(255, 110, 0);
+    text-decoration: none;
+}
+
+

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Snackify - Payment</title>
+  <link rel="stylesheet" href="/css/payment.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <h1>Snackify</h1>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="recipes.html">Categories</a></li>      
+    </ul>
+  </nav>
+
+  <div class="container">
+    <h2>Payment Details</h2>
+    <div class="summary">
+      <p><strong>Total Amount:</strong> ₹<span id="orderTotal">0</span></p>
+
+    </div>
+
+    <form id="paymentForm">
+      <label for="name">Name on Card</label>
+      <input type="text" id="name" required />
+
+      <label for="cardNumber">Card Number</label>
+      <input type="text" id="cardNumber" placeholder="16-digit card number" maxlength="16" required />
+
+      <label for="expiry">Expiry Date</label>
+      <input type="month" id="expiry" required />
+
+      <label for="cvv">CVV</label>
+      <input type="password" id="cvv" maxlength="3" required />
+
+      <button type="submit">Pay Now</button>
+    </form>
+
+    <div id="message"></div>
+  </div>
+
+  <script src="/js/payment.js"></script>
+</body>
+</html>
